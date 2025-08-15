@@ -1,3 +1,3 @@
 
-const { withNetlify } = require('@netlify/next');
-module.exports = withNetlify();
+const netlify = require('@netlify/next');
+module.exports = netlify;
