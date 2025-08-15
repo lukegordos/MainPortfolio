@@ -259,3 +259,16 @@ MIT License - feel free to use this project for your own portfolio!
 ---
 
 **Need help?** Open an issue on GitHub or contact me through the portfolio contact form.
+
+## Netlify Deployment Instructions
+
+If deploying this project to Netlify, use these settings:
+
+- **Base directory:** `frontend`
+- **Build command:** `npm run build`
+- **Publish directory:** `.next`
+- **Node version:** 18 (set in `netlify.toml`)
+
+The project uses the `@netlify/next` adapter for Next.js 13/14 app directory support. No custom redirects are needed.
+
+If you see a 404 error, double-check the above settings and ensure your deploy points to the `frontend` folder, not the repo root.
