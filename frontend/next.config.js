@@ -7,8 +7,7 @@ const nextConfig = {
 };
 
 if (process.env.NETLIFY) {
-  const { withNetlify } = require('@netlify/next');
-  module.exports = withNetlify()(nextConfig);
+  module.exports = require('@netlify/next')();
 } else {
   module.exports = nextConfig;
 }
