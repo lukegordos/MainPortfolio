@@ -4,7 +4,6 @@
     "module": "commonjs",
     "lib": ["es2021"],
   "types": ["node"],
-  "typeRoots": ["./node_modules/@types"],
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
