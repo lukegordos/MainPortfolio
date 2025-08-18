@@ -26,7 +26,10 @@ const PORT = process.env.PORT || 3001
 app.use(helmet())
 app.use(morgan('combined'))
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: [
+    'http://localhost:3000',
+    'https://lukegordos.netlify.app'
+  ],
   credentials: true
 }))
 app.use(express.json())
