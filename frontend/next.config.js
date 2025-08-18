@@ -1,4 +1,8 @@
 
 
-const netlify = require('@netlify/next');
-module.exports = netlify;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	output: 'export',
+};
+
+module.exports = nextConfig;
