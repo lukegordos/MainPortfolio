@@ -27,10 +27,10 @@ export default function SkillsPage() {
 
   // Group and classify skills
   const codingLanguages = skills?.filter(skill =>
-    ['JavaScript', 'TypeScript', 'Python', 'HTML/CSS', 'SQL'].includes(skill.name)
+    ['JavaScript', 'TypeScript', 'Python', 'Java', 'HTML/CSS', 'SQL'].includes(skill.name)
   ) || []
   const frontendLanguages = codingLanguages.filter(skill => ['JavaScript', 'TypeScript', 'HTML/CSS'].includes(skill.name))
-  const backendLanguages = codingLanguages.filter(skill => ['Python', 'SQL'].includes(skill.name))
+  const backendLanguages = codingLanguages.filter(skill => ['Python', 'SQL', 'Java'].includes(skill.name))
   const frameworks = skills?.filter(skill =>
     ['React', 'Next.js', 'Express.js', 'Flutter', 'Tailwind CSS', 'Prisma', 'Flask', 'FastAPI'].includes(skill.name)
   ) || []
@@ -56,7 +56,7 @@ export default function SkillsPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+  <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-screen">
       <motion.h1
         className="text-4xl font-bold text-center mb-12"
         initial={{ opacity: 0, y: 20 }}

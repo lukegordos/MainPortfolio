@@ -23,7 +23,7 @@ async function main() {
   { name: 'HTML/CSS', category: 'Frontend', proficiency: 5 },
   { name: 'Tailwind CSS', category: 'Frontend', proficiency: 2 },
   { name: 'Flutter', category: 'Frontend', proficiency: 1 },
-  { name: 'Java', category: 'Frontend', proficiency: 4 },
+  { name: 'Java', category: 'Backend', proficiency: 4 },
   // Backend
   { name: 'Node.js', category: 'Backend', proficiency: 3 },
   { name: 'Express.js', category: 'Backend', proficiency: 2 },

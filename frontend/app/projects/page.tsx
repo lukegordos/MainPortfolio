@@ -53,24 +53,14 @@ export default function ProjectsPage() {
               <p className="text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
               
               <div className="flex flex-wrap gap-2 mb-4">
-                {project.tech_stack.map((tech) => {
-                  // Emphasize CS/engineering skills
-                  const csSkills = [
-                    'Algorithm', 'Data Structure', 'Machine Learning', 'Database', 'API Integration', 'CRUD Operations',
-                    'Component Libraries', 'UI/UX Design', 'Financial Reporting', 'Geospatial Analysis', 'WebSockets',
-                    'Chart.js', 'Chart Components', 'Interactive Forms', 'Database Integration', 'Full Stack', 'Modern Technologies',
-                    'Fitness Tracking', 'Community Features', 'Real-time', 'Compliance Tools', 'Admin Dashboard', 'Analytics Dashboard'
-                  ];
-                  const isCS = csSkills.some(cs => tech.toLowerCase().includes(cs.toLowerCase()));
-                  return (
-                    <span
-                      key={tech}
-                      className={`px-2 py-1 rounded-md text-xs ${isCS ? 'bg-primary text-primary-foreground font-semibold border border-primary' : 'bg-secondary text-secondary-foreground'}`}
-                    >
-                      {tech}
-                    </span>
-                  );
-                })}
+                {project.tech_stack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2 py-1 rounded-md text-xs bg-secondary text-secondary-foreground"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
 
               <div className="flex items-center gap-3">
