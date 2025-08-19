@@ -16,28 +16,30 @@ async function main() {
   const skills = await prisma.skill.createMany({
     data: [
       // Frontend
-      { name: 'React', category: 'Frontend', proficiency: 3 },
-      { name: 'Next.js', category: 'Frontend', proficiency: 2 },
-      { name: 'TypeScript', category: 'Frontend', proficiency: 2 },
-      { name: 'JavaScript', category: 'Frontend', proficiency: 4 },
-      { name: 'HTML/CSS', category: 'Frontend', proficiency: 5 },
-      { name: 'Tailwind CSS', category: 'Frontend', proficiency: 2 },
-      { name: 'Flutter', category: 'Frontend', proficiency: 1 },
-      
-      // Backend
-      { name: 'Node.js', category: 'Backend', proficiency: 3 },
-      { name: 'Express.js', category: 'Backend', proficiency: 2 },
-      { name: 'Python', category: 'Backend', proficiency: 2 },
-      { name: 'RESTful APIs', category: 'Backend', proficiency: 3 },
-      { name: 'API Integration', category: 'Backend', proficiency: 2 },
-      
-      // Database
-      { name: 'PostgreSQL', category: 'Database', proficiency: 2 },
-      { name: 'MongoDB', category: 'Database', proficiency: 1 },
-      { name: 'Prisma', category: 'Database', proficiency: 2 },
-      { name: 'SQLite', category: 'Database', proficiency: 2 },
-      
-      // Tools & Technologies
+  { name: 'React', category: 'Frontend', proficiency: 3 },
+  { name: 'Next.js', category: 'Frontend', proficiency: 2 },
+  { name: 'TypeScript', category: 'Frontend', proficiency: 2 },
+  { name: 'JavaScript', category: 'Frontend', proficiency: 4 },
+  { name: 'HTML/CSS', category: 'Frontend', proficiency: 5 },
+  { name: 'Tailwind CSS', category: 'Frontend', proficiency: 2 },
+  { name: 'Flutter', category: 'Frontend', proficiency: 1 },
+  { name: 'Java', category: 'Frontend', proficiency: 4 },
+  // Backend
+  { name: 'Node.js', category: 'Backend', proficiency: 3 },
+  { name: 'Express.js', category: 'Backend', proficiency: 2 },
+  { name: 'Python', category: 'Backend', proficiency: 4 },
+  { name: 'RESTful APIs', category: 'Backend', proficiency: 3 },
+  { name: 'API Integration', category: 'Backend', proficiency: 2 },
+  // Database
+  { name: 'PostgreSQL', category: 'Database', proficiency: 2 },
+  { name: 'MongoDB', category: 'Database', proficiency: 1 },
+  { name: 'Prisma', category: 'Database', proficiency: 2 },
+  { name: 'SQLite', category: 'Database', proficiency: 2 },
+  // Other coding languages from projects/work experience
+  { name: 'SQL', category: 'Backend', proficiency: 2 },
+  { name: 'HTML', category: 'Frontend', proficiency: 5 },
+  { name: 'CSS', category: 'Frontend', proficiency: 5 },
+  // Tools & Technologies
       { name: 'Excel', category: 'Tools', proficiency: 6 },
       { name: 'Git', category: 'Tools', proficiency: 3 },
       { name: 'AWS', category: 'Tools', proficiency: 1 },
