@@ -44,18 +44,8 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Theme Toggle */}
+          {/* Mobile Menu Button */}
           <div className="flex items-center space-x-4">
-            {mounted && (
-              <button
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="p-2 rounded-md hover:bg-accent"
-              >
-                {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
-              </button>
-            )}
-
-            {/* Mobile Menu Button */}
             <button
               className="md:hidden p-2 rounded-md hover:bg-accent"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
