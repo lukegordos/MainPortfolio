@@ -144,7 +144,7 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-4 px-8 rounded-xl text-xl font-bold transition-colors duration-200 bg-white text-black dark:bg-card dark:text-card-foreground hover:bg-gray-100 dark:hover:bg-card/90 shadow-md flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full py-4 px-8 rounded-xl text-xl font-bold transition-colors duration-200 bg-white text-black dark:bg-white dark:text-black hover:bg-gray-100 dark:hover:bg-gray-200 shadow-md flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <>

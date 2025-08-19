@@ -56,7 +56,7 @@ export default function SkillsPage() {
   }
 
   return (
-  <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-screen">
+    <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-screen">
       <motion.h1
         className="text-4xl font-bold text-center mb-12"
         initial={{ opacity: 0, y: 20 }}
@@ -75,12 +75,12 @@ export default function SkillsPage() {
         Each skill shows my years of experience and expertise level.
       </motion.p>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto justify-center items-center">
+      <div className="flex flex-col gap-8 w-full max-w-2xl items-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="bg-card p-6 rounded-lg shadow-sm border"
+          className="bg-card p-8 rounded-lg shadow-sm border w-full"
         >
           <h2 className="text-2xl font-semibold mb-6 flex items-center">
             <span className="inline-block w-4 h-4 rounded mr-3 bg-gradient-to-r from-blue-500 to-cyan-500"></span>
@@ -149,7 +149,7 @@ export default function SkillsPage() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="bg-card p-6 rounded-lg shadow-sm border"
+          className="bg-card p-8 rounded-lg shadow-sm border w-full"
         >
           <h2 className="text-2xl font-semibold mb-6 flex items-center">
             <span className="inline-block w-4 h-4 rounded mr-3 bg-gradient-to-r from-purple-500 to-violet-500"></span>
@@ -186,7 +186,7 @@ export default function SkillsPage() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="bg-card p-6 rounded-lg shadow-sm border"
+          className="bg-card p-8 rounded-lg shadow-sm border w-full"
         >
           <h2 className="text-2xl font-semibold mb-6 flex items-center">
             <span className="inline-block w-4 h-4 rounded mr-3 bg-gradient-to-r from-orange-500 to-amber-500"></span>
